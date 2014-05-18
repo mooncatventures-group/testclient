@@ -22,6 +22,7 @@
 		213F3FD019286E4C00F9E098 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213F3FAF19286E4B00F9E098 /* UIKit.framework */; };
 		213F3FD819286E4C00F9E098 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 213F3FD619286E4C00F9E098 /* InfoPlist.strings */; };
 		213F3FDA19286E4C00F9E098 /* testclientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 213F3FD919286E4C00F9E098 /* testclientTests.m */; };
+		213F3FF81929076A00F9E098 /* MultiPeerLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213F3FF71929076A00F9E098 /* MultiPeerLogger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		213F3FD519286E4C00F9E098 /* testclientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testclientTests-Info.plist"; sourceTree = "<group>"; };
 		213F3FD719286E4C00F9E098 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		213F3FD919286E4C00F9E098 /* testclientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testclientTests.m; sourceTree = "<group>"; };
+		213F3FF71929076A00F9E098 /* MultiPeerLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultiPeerLogger.framework; path = testclient/MultiPeerLogger.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213F3FF81929076A00F9E098 /* MultiPeerLogger.framework in Frameworks */,
 				213F3FAE19286E4B00F9E098 /* CoreGraphics.framework in Frameworks */,
 				213F3FB019286E4B00F9E098 /* UIKit.framework in Frameworks */,
 				213F3FAC19286E4B00F9E098 /* Foundation.framework in Frameworks */,
@@ -103,6 +106,7 @@
 		213F3FAA19286E4B00F9E098 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				213F3FF71929076A00F9E098 /* MultiPeerLogger.framework */,
 				213F3FAB19286E4B00F9E098 /* Foundation.framework */,
 				213F3FAD19286E4B00F9E098 /* CoreGraphics.framework */,
 				213F3FAF19286E4B00F9E098 /* UIKit.framework */,
@@ -392,6 +396,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/logger-feetngzdmwcxsyggphafzrexdwts/Build/Products/Debug-iphoneos",
+					/Users/michelle211/git/multipeerLogger/testclient/testclient,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testclient/testclient-Prefix.pch";
 				INFOPLIST_FILE = "testclient/testclient-Info.plist";
@@ -405,6 +414,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/logger-feetngzdmwcxsyggphafzrexdwts/Build/Products/Debug-iphoneos",
+					/Users/michelle211/git/multipeerLogger/testclient/testclient,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testclient/testclient-Prefix.pch";
 				INFOPLIST_FILE = "testclient/testclient-Info.plist";
@@ -474,6 +488,7 @@
 				213F3FDF19286E4C00F9E098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		213F3FE019286E4C00F9E098 /* Build configuration list for PBXNativeTarget "testclientTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +497,7 @@
 				213F3FE219286E4C00F9E098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

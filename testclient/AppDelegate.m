@@ -4,7 +4,7 @@
 //
 //  Created by michelle cannon on 5/18/14.
 //  Copyright (c) 2014 michelle cannon. All rights reserved.
-//
+//  MIT licensed , free for commercial and non-comerical use.
 
 #import "AppDelegate.h"
 

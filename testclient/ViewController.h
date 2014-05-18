@@ -7,7 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MultiPeerLogger/PeerLogger.h>
 
-@interface ViewController : UIViewController
+//ToDo:
 
+/* to use in your own applications 
+ 
+ add the multpeerlogger.framework
+ 
+ add the import
+ 
+ <MultiPeerLogger/PeerLogger.h>
+ 
+ */
+
+
+@interface ViewController : UIViewController<connectionStateDelegate> {
+    
+ /* ToDo:  add the <connectionStateDelegate> */
+    
+PeerLogger *logger;
+}
 @end
